@@ -122,7 +122,8 @@ namespace WindowsFormsApplication1
             {
                 if (dbobj.UpdatePatient(int.Parse(txtpatid.Text) ,txtpatname.Text, txtpatadd.Text, Convert.ToBoolean(comboBox1.Text), Convert.ToInt32(dateTimePicker1), Convert.ToInt32(txtpatnumber.Text)))
                 {
-                    MessageBox.Show("data stored");
+                    MessageBox.Show("data updated");
+                    txtpatid.Text = "";
                     txtpatname.Text = "";
                     txtpatadd.Text = "";
                     txtpatnumber.Text = "";

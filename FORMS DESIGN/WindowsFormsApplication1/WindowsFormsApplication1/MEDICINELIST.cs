@@ -10,22 +10,22 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class VIEWAPPOINTMENT : MetroFramework.Forms.MetroForm
+    public partial class MEDICINELIST : MetroFramework.Forms.MetroForm
     {
         DB dbobj = new DB();
-        public VIEWAPPOINTMENT()
+        public MEDICINELIST()
         {
             InitializeComponent();
+        }
+
+        private void MEDICINELIST_Load(object sender, EventArgs e)
+        {
+            dbobj.MedicineData(dataGridView1);
         }
 
         private void btncancel_Click(object sender, EventArgs e)
         {
             Hide();
-        }
-
-        private void VIEWAPPOINTMENT_Load(object sender, EventArgs e)
-        {
-            dbobj.VisitData(dataGridView1);
         }
     }
 }

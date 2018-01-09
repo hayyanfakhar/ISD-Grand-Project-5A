@@ -14,3 +14,6 @@ C:\Users\test\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debu
 C:\Users\test\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PRESCRIBE_MEDICINE.resources
 C:\Users\test\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.VIEWAPPOINTMENT.resources
 C:\Users\test\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.VIEWPATIENT.resources
+C:\Users\Dell\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Dell\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Dell\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb

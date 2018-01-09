@@ -245,6 +245,96 @@ namespace WindowsFormsApplication1
             return true;
 
         }
+        public bool SinglePatientData(DataGridView dgv)
+        {
+            try
+            {
+                getConnection();
+                DataTable dt = new DataTable();
+                string query = "EXEC getPatientByName ";
+                SqlDataAdapter sa = new SqlDataAdapter(query, con);
+                sa.Fill(dt);
+                dgv.DataSource = dt;
+
+            }
+            catch (Exception ex)
+            {
+                ex.Message.ToString();
+            }
+            finally
+            {
+                con.Close();
+            }
+            return true;
+
+        }
+        public bool InsertMedicine(String Med_Name, int Cost)
+        {
+            try
+            {
+                getConnection();
+                String query = "Exec AddMedicine";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+
+
+            }
+            catch (Exception ex)
+            {
+                ex.Message.ToString();
+            }
+            finally
+            {
+                con.Close();
+            }
+            return true;
+        }
+        public bool UpdateMedicine(int Med_ID, String Med_Name, int Cost)
+        {
+            try
+            {
+                getConnection();
+                String query = "Exec UpdateMedicine";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+
+
+            }
+            catch (Exception ex)
+            {
+                ex.Message.ToString();
+            }
+            finally
+            {
+                con.Close();
+            }
+            return true;
+
+
+        }
+        public bool MedicineData(DataGridView dgv)
+        {
+            try
+            {
+                getConnection();
+                DataTable dt = new DataTable();
+                string query = "EXEC getMedicineList";
+                SqlDataAdapter sa = new SqlDataAdapter(query, con);
+                sa.Fill(dt);
+                dgv.DataSource = dt;
+
+            }
+            catch (Exception ex)
+            {
+                ex.Message.ToString();
+            }
+            finally
+            {
+                con.Close();
+            }
+            return true;
+
+        }
 
     }
 }

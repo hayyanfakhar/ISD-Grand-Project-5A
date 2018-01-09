@@ -95,6 +95,18 @@
       <DependentUpon>ClinicSystemDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="DB.cs" />
+    <Compile Include="MEDICINE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEDICINE.Designer.cs">
+      <DependentUpon>MEDICINE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MEDICINELIST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEDICINELIST.Designer.cs">
+      <DependentUpon>MEDICINELIST.cs</DependentUpon>
+    </Compile>
     <Compile Include="PATIENT.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +141,12 @@
     </Compile>
     <EmbeddedResource Include="APPOINTMENT.resx">
       <DependentUpon>APPOINTMENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEDICINE.resx">
+      <DependentUpon>MEDICINE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEDICINELIST.resx">
+      <DependentUpon>MEDICINELIST.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PATIENT.resx">
       <DependentUpon>PATIENT.cs</DependentUpon>

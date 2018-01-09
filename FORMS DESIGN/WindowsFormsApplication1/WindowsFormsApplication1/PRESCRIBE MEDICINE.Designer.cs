@@ -36,30 +36,30 @@
             this.rbadd = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.cbmedid = new System.Windows.Forms.ComboBox();
+            this.medicineBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clinicSystemDataSet2 = new WindowsFormsApplication1.ClinicSystemDataSet2();
             this.label3 = new System.Windows.Forms.Label();
             this.cbvisitid = new System.Windows.Forms.ComboBox();
+            this.visitBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clinicSystemDataSet1 = new WindowsFormsApplication1.ClinicSystemDataSet1();
             this.txtid = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.clinicSystemDataSet = new WindowsFormsApplication1.ClinicSystemDataSet();
             this.visitMedicineBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.visit_MedicineTableAdapter = new WindowsFormsApplication1.ClinicSystemDataSetTableAdapters.Visit_MedicineTableAdapter();
-            this.clinicSystemDataSet1 = new WindowsFormsApplication1.ClinicSystemDataSet1();
-            this.visitBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.visitTableAdapter = new WindowsFormsApplication1.ClinicSystemDataSet1TableAdapters.VisitTableAdapter();
-            this.clinicSystemDataSet2 = new WindowsFormsApplication1.ClinicSystemDataSet2();
-            this.medicineBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.medicineTableAdapter = new WindowsFormsApplication1.ClinicSystemDataSet2TableAdapters.MedicineTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.medicineBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clinicSystemDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.visitBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clinicSystemDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clinicSystemDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.visitMedicineBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clinicSystemDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.visitBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clinicSystemDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medicineBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnupdate
             // 
-            this.btnupdate.Location = new System.Drawing.Point(96, 243);
+            this.btnupdate.Location = new System.Drawing.Point(98, 243);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(75, 23);
             this.btnupdate.TabIndex = 54;
@@ -129,6 +129,16 @@
             this.cbmedid.TabIndex = 49;
             this.cbmedid.ValueMember = "Med_ID";
             // 
+            // medicineBindingSource
+            // 
+            this.medicineBindingSource.DataMember = "Medicine";
+            this.medicineBindingSource.DataSource = this.clinicSystemDataSet2;
+            // 
+            // clinicSystemDataSet2
+            // 
+            this.clinicSystemDataSet2.DataSetName = "ClinicSystemDataSet2";
+            this.clinicSystemDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // label3
             // 
             this.label3.Location = new System.Drawing.Point(31, 143);
@@ -148,6 +158,16 @@
             this.cbvisitid.Size = new System.Drawing.Size(200, 21);
             this.cbvisitid.TabIndex = 47;
             this.cbvisitid.ValueMember = "Visit_ID";
+            // 
+            // visitBindingSource
+            // 
+            this.visitBindingSource.DataMember = "Visit";
+            this.visitBindingSource.DataSource = this.clinicSystemDataSet1;
+            // 
+            // clinicSystemDataSet1
+            // 
+            this.clinicSystemDataSet1.DataSetName = "ClinicSystemDataSet1";
+            this.clinicSystemDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txtid
             // 
@@ -179,29 +199,9 @@
             // 
             this.visit_MedicineTableAdapter.ClearBeforeFill = true;
             // 
-            // clinicSystemDataSet1
-            // 
-            this.clinicSystemDataSet1.DataSetName = "ClinicSystemDataSet1";
-            this.clinicSystemDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // visitBindingSource
-            // 
-            this.visitBindingSource.DataMember = "Visit";
-            this.visitBindingSource.DataSource = this.clinicSystemDataSet1;
-            // 
             // visitTableAdapter
             // 
             this.visitTableAdapter.ClearBeforeFill = true;
-            // 
-            // clinicSystemDataSet2
-            // 
-            this.clinicSystemDataSet2.DataSetName = "ClinicSystemDataSet2";
-            this.clinicSystemDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // medicineBindingSource
-            // 
-            this.medicineBindingSource.DataMember = "Medicine";
-            this.medicineBindingSource.DataSource = this.clinicSystemDataSet2;
             // 
             // medicineTableAdapter
             // 
@@ -226,12 +226,12 @@
             this.Name = "PRESCRIBE_MEDICINE";
             this.Text = "PRESCRIBE_MEDICINE";
             this.Load += new System.EventHandler(this.PRESCRIBE_MEDICINE_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.medicineBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clinicSystemDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.visitBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clinicSystemDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clinicSystemDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.visitMedicineBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clinicSystemDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.visitBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clinicSystemDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medicineBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

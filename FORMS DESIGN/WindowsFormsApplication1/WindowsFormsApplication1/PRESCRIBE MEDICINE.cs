@@ -12,6 +12,7 @@ namespace WindowsFormsApplication1
 {
     public partial class PRESCRIBE_MEDICINE : MetroFramework.Forms.MetroForm
     {
+        DB dbobj = new DB();
         public PRESCRIBE_MEDICINE()
         {
             InitializeComponent();
@@ -38,11 +39,48 @@ namespace WindowsFormsApplication1
 
         private void btnsave_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if(rbadd.Checked == true)//(dbobj.insertVisitMed(Convert.ToInt32(cbvisitid.Text), Convert.ToInt32(cbmedid.Text)))
+                {
+                    MessageBox.Show("data stored");
+                    Refresh2();
+                    cbvisitid.Text = "";
+                    cbmedid.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("unhandled exception");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
 
         }
 
+   
+
         private void btnupdate_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if(rbadd.Checked == true)//(dbobj.updateVisitMed(Convert.ToInt32(txtid.text) ,Convert.ToInt32(cbvisitid.Text), Convert.ToInt32(cbmedid.Text)))
+                {
+                    MessageBox.Show("data updated");
+                    cbvisitid.Text = "";
+                    cbmedid.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("unhandled exception");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
 
         }
 
@@ -65,6 +103,7 @@ namespace WindowsFormsApplication1
                 btnsave.Visible = true;
                 btnupdate.Visible = false;
                 txtid.Enabled = false;
+                Refresh2();
                 txtid.Text = "";
                 cbmedid.Text = "";
                 cbvisitid.Text = "";
@@ -88,6 +127,11 @@ namespace WindowsFormsApplication1
                 txtid.Text = null;
 
             }
+        }
+
+        private void Refresh2()
+        {
+               //txtid.Text = dbobj.genPatient_ID().ToString();
         }
     }
 }
