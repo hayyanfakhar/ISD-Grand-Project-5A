@@ -79,11 +79,33 @@
     <Compile Include="APPOINTMENT.Designer.cs">
       <DependentUpon>APPOINTMENT.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClinicSystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClinicSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicSystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClinicSystemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicSystemDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClinicSystemDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB.cs" />
     <Compile Include="PATIENT.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PATIENT.Designer.cs">
       <DependentUpon>PATIENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRESCRIBE MEDICINE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRESCRIBE MEDICINE.Designer.cs">
+      <DependentUpon>PRESCRIBE MEDICINE.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -93,11 +115,26 @@
     <Compile Include="SEARCH.Designer.cs">
       <DependentUpon>SEARCH.cs</DependentUpon>
     </Compile>
+    <Compile Include="VIEWAPPOINTMENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEWAPPOINTMENT.Designer.cs">
+      <DependentUpon>VIEWAPPOINTMENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEWPATIENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEWPATIENT.Designer.cs">
+      <DependentUpon>VIEWPATIENT.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="APPOINTMENT.resx">
       <DependentUpon>APPOINTMENT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PATIENT.resx">
       <DependentUpon>PATIENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRESCRIBE MEDICINE.resx">
+      <DependentUpon>PRESCRIBE MEDICINE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -111,6 +148,45 @@
     <EmbeddedResource Include="SEARCH.resx">
       <DependentUpon>SEARCH.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="VIEWAPPOINTMENT.resx">
+      <DependentUpon>VIEWAPPOINTMENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEWPATIENT.resx">
+      <DependentUpon>VIEWPATIENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClinicSystemDataSet.xsc">
+      <DependentUpon>ClinicSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ClinicSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClinicSystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClinicSystemDataSet.xss">
+      <DependentUpon>ClinicSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ClinicSystemDataSet1.xsc">
+      <DependentUpon>ClinicSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ClinicSystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClinicSystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClinicSystemDataSet1.xss">
+      <DependentUpon>ClinicSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ClinicSystemDataSet2.xsc">
+      <DependentUpon>ClinicSystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ClinicSystemDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClinicSystemDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClinicSystemDataSet2.xss">
+      <DependentUpon>ClinicSystemDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -135,6 +211,15 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClinicSystem.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ClinicSystem_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>ClinicSystem.mdf</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

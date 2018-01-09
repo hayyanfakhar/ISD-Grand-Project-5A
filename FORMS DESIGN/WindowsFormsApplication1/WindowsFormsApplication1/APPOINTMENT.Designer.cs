@@ -52,6 +52,7 @@
             this.rbupdate.TabStop = true;
             this.rbupdate.Text = "UPDATE";
             this.rbupdate.UseVisualStyleBackColor = true;
+            this.rbupdate.CheckedChanged += new System.EventHandler(this.rbupdate_CheckedChanged);
             // 
             // rbadd
             // 
@@ -62,6 +63,7 @@
             this.rbadd.TabStop = true;
             this.rbadd.Text = "ADD";
             this.rbadd.UseVisualStyleBackColor = true;
+            this.rbadd.CheckedChanged += new System.EventHandler(this.rbadd_CheckedChanged);
             // 
             // label4
             // 
@@ -130,6 +132,7 @@
             this.btnupdate.TabIndex = 41;
             this.btnupdate.Text = "UPDATE";
             this.btnupdate.UseVisualStyleBackColor = true;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // btncancel
             // 
@@ -149,6 +152,7 @@
             this.btnsave.TabIndex = 40;
             this.btnsave.Text = "SAVE";
             this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // txtappdate
             // 

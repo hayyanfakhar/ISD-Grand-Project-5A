@@ -49,17 +49,14 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "AUTHOR",
-            "BOOK",
-            "CATEGORY",
-            "ISSUED",
-            "MEMBER",
-            "PUBLISHER",
-            "SUPPLIER"});
-            this.comboBox1.Location = new System.Drawing.Point(118, 25);
+            "APPOINTMENT",
+            "PATIENT",
+            "BILL"});
+            this.comboBox1.Location = new System.Drawing.Point(139, 28);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(151, 21);
             this.comboBox1.TabIndex = 5;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btncancel
             // 
@@ -69,6 +66,7 @@
             this.btncancel.TabIndex = 4;
             this.btncancel.Text = "CANCEL";
             this.btncancel.UseVisualStyleBackColor = true;
+            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
             // 
             // SEARCH
             // 

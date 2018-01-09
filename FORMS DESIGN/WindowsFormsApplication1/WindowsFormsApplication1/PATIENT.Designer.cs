@@ -43,9 +43,8 @@
             this.btnsave = new System.Windows.Forms.Button();
             this.txtpatnumber = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.rbmale = new System.Windows.Forms.RadioButton();
-            this.rbfemale = new System.Windows.Forms.RadioButton();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnupdate
@@ -56,26 +55,29 @@
             this.btnupdate.TabIndex = 38;
             this.btnupdate.Text = "UPDATE";
             this.btnupdate.UseVisualStyleBackColor = true;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // rbupdate
             // 
-            this.rbupdate.Location = new System.Drawing.Point(206, 63);
+            this.rbupdate.Location = new System.Drawing.Point(213, 63);
             this.rbupdate.Name = "rbupdate";
             this.rbupdate.Size = new System.Drawing.Size(104, 24);
             this.rbupdate.TabIndex = 41;
             this.rbupdate.TabStop = true;
             this.rbupdate.Text = "UPDATE";
             this.rbupdate.UseVisualStyleBackColor = true;
+            this.rbupdate.CheckedChanged += new System.EventHandler(this.rbupdate_CheckedChanged);
             // 
             // rbadd
             // 
-            this.rbadd.Location = new System.Drawing.Point(72, 63);
+            this.rbadd.Location = new System.Drawing.Point(79, 63);
             this.rbadd.Name = "rbadd";
             this.rbadd.Size = new System.Drawing.Size(82, 24);
             this.rbadd.TabIndex = 40;
             this.rbadd.TabStop = true;
             this.rbadd.Text = "ADD";
             this.rbadd.UseVisualStyleBackColor = true;
+            this.rbadd.CheckedChanged += new System.EventHandler(this.rbadd_CheckedChanged);
             // 
             // label4
             // 
@@ -151,6 +153,7 @@
             this.btncancel.TabIndex = 39;
             this.btncancel.Text = "CANCEL";
             this.btncancel.UseVisualStyleBackColor = true;
+            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
             // 
             // btnsave
             // 
@@ -160,6 +163,7 @@
             this.btnsave.TabIndex = 37;
             this.btnsave.Text = "SAVE";
             this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // txtpatnumber
             // 
@@ -177,28 +181,6 @@
             this.label6.Text = "PHONE NUMBER:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // rbmale
-            // 
-            this.rbmale.AutoSize = true;
-            this.rbmale.Location = new System.Drawing.Point(189, 231);
-            this.rbmale.Name = "rbmale";
-            this.rbmale.Size = new System.Drawing.Size(54, 17);
-            this.rbmale.TabIndex = 44;
-            this.rbmale.TabStop = true;
-            this.rbmale.Text = "MALE";
-            this.rbmale.UseVisualStyleBackColor = true;
-            // 
-            // rbfemale
-            // 
-            this.rbfemale.AutoSize = true;
-            this.rbfemale.Location = new System.Drawing.Point(284, 231);
-            this.rbfemale.Name = "rbfemale";
-            this.rbfemale.Size = new System.Drawing.Size(67, 17);
-            this.rbfemale.TabIndex = 45;
-            this.rbfemale.TabStop = true;
-            this.rbfemale.Text = "FEMALE";
-            this.rbfemale.UseVisualStyleBackColor = true;
-            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(173, 264);
@@ -206,14 +188,23 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(196, 20);
             this.dateTimePicker1.TabIndex = 46;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(173, 232);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(196, 21);
+            this.comboBox1.TabIndex = 47;
+            this.comboBox1.Items.Add("MALE");
+            this.comboBox1.Items.Add("FEMALE");
+            // 
             // PATIENT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(392, 377);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.rbfemale);
-            this.Controls.Add(this.rbmale);
             this.Controls.Add(this.txtpatnumber);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnupdate);
@@ -231,6 +222,7 @@
             this.Controls.Add(this.btnsave);
             this.Name = "PATIENT";
             this.Text = "PATIENT";
+            this.Load += new System.EventHandler(this.PATIENT_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,9 +245,8 @@
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.TextBox txtpatnumber;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.RadioButton rbmale;
-        private System.Windows.Forms.RadioButton rbfemale;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

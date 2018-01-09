@@ -9,3 +9,8 @@ C:\Users\test\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debu
 C:\Users\test\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
 C:\Users\test\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\test\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\test\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\ClinicSystem.mdf
+C:\Users\test\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\ClinicSystem_log.ldf
+C:\Users\test\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PRESCRIBE_MEDICINE.resources
+C:\Users\test\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.VIEWAPPOINTMENT.resources
+C:\Users\test\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.VIEWPATIENT.resources

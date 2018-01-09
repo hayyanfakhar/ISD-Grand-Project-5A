@@ -16,5 +16,10 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
+
+        private void btncancel_Click(object sender, EventArgs e)
+        {
+            Hide();
+        }
     }
 }
