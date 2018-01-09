@@ -23,7 +23,7 @@ namespace DllClinic
             
 
         }
-            public bool insertPatient(string Patient_Name, string Patient_Address, bool Patient_Gender, int Patient_Dob, int Patient_Contact)
+          //  public bool insertPatient(string Patient_Name, string Patient_Address, bool Patient_Gender, int Patient_Dob, int Patient_Contact)
         {
             try
             {
