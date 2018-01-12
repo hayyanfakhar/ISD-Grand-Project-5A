@@ -61,7 +61,21 @@ namespace WindowsFormsApplication4
 
             }
 
+        } public void medicine_valid()
+    {
+        if (txtmedid.text == string.Empty)
+        {
+            MessageBox.Show("no textbox should be empty");
+        }
+        else if(txtmedname.text== string.Empty)
+        {
+            MessageBox.Show("no textbox should be empty");
+
+        }else if(txtmedcost.text == string.Empt)
+        {
+            MessageBox.Show("no textbox should be empty");
         }
     }
-}
-}
+    }
+
+

@@ -146,7 +146,28 @@ namespace ZarbabBuissness
 
 
         }
-          MessageBox.Show("saved");
+          public void patient_valid()
+        {
+            if (txtpatid.text == string.Empty)
+            {
+                MessageBox.Show("no textbox should be empty");
+            }else if(txtpatname.text== string.Empty)
+            {
+                MessageBox.Show("no textbox should be empty");
+            }
+            else if(txtpatadd.text== string.Empty)
+            {
+                MessageBox.Show("no textbox should be empty");
+            }
+            else if (comboBox1.text == string.Empty)
+            {
+                MessageBox.Show("no textbox should be empty");
+            }
+            else if (txtpatnumber.text == string.Empty)
+            {
+                MessageBox.Show("no textbox should be empty");
+            }
+        }
 
 
 
