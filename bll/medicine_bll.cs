@@ -8,7 +8,8 @@ namespace WindowsFormsApplication4
 {
     class medicine_bll
     {
-
+        dll dll = new dll();
+ 
             string Medicine_Name
             {
 
@@ -63,6 +64,7 @@ namespace WindowsFormsApplication4
 
         } public void medicine_valid()
     {
+        dll.MedicineData();
         if (txtmedid.text == string.Empty)
         {
             MessageBox.Show("no textbox should be empty");
