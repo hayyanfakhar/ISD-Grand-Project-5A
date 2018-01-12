@@ -10,7 +10,7 @@ namespace WindowsFormsApplication1
     class prescribedmed_bll
     {
        PRESCRIBE_MEDICINE pre = new PRESCRIBE_MEDICINE();
-
+        dll dll = new dll();
 
         int id
         {

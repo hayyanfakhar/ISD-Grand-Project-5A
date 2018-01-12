@@ -8,6 +8,8 @@ namespace ZarbabBuissness
 {
     class PatientBll
     {
+        dll dll = new dll();
+        
         string Patient_Name
         {
 
@@ -148,6 +150,7 @@ namespace ZarbabBuissness
         }
           public void patient_valid()
         {
+            dll.insertPatient();
             if (txtpatid.text == string.Empty)
             {
                 MessageBox.Show("no textbox should be empty");

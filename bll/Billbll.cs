@@ -8,6 +8,8 @@ namespace ZarbabBuissness
 {
     class Billbll
     {
+        dll dll = new dll();
+dll.insertBill();
 
         int Medicine_Bill
         {
